@@ -35,8 +35,9 @@ class AbstractMelonOrder:
         # christmas melons is in species as an attribute
 
         # print_this = get_base_price(self)
-        base_price = 5
-        
+        # base_price = 5
+        base_price = self.get_base_price()  
+
         #if christmas_melon
 
         if self.species == "Christmas melons":
@@ -51,8 +52,8 @@ class AbstractMelonOrder:
             total = total + 3
         
         # https://www.codespeedy.com/how-to-call-method-of-another-class-in-python/
-        AbstractMelonOrder.get_base_price(self)
-        self.get_base_price()
+        # AbstractMelonOrder.get_base_price(self)
+        # self.get_base_price(self)
         # https://devnote.in/how-to-call-one-method-from-another-within-the-same-class-in-python/
         
         return total
